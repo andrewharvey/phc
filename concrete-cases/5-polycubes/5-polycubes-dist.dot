@@ -1,0 +1,295 @@
+/*
+ * This graph file contains all 3D polycubes with 5 cubes. It shows which 
+ * polycubes can be transformed into other polycubes via moving a single cube.
+ * 
+ * You can generate a png using
+ *   dot -Tsvg -o 5-polycubes-dist.svg 5-polycubes-dist.dot
+ * then you can use rsvg to make a png. If you want to use -Tpng, you will need
+ * to change the image links in this file to point to the png node images.
+ *
+ * Written by Andrew Harvey <http://andrewharvey4.wordpress.com/>
+ *
+ * To the extent possible under law, the person who associated CC0
+ * with this work has waived all copyright and related or neighboring
+ * rights to this work.
+ * http://creativecommons.org/publicdomain/zero/1.0/
+ */
+
+strict graph polycubesdist {
+  /* set the defaults */
+
+  /* graph defaults */
+  /* layout options
+    dot − ﬁlter for drawing directed graphs
+    neato − ﬁlter for drawing undirected graphs
+    twopi − ﬁlter for radial layouts of graphs
+    circo − ﬁlter for circular layout of graphs
+    fdp − ﬁlter for drawing undirected graphs
+    sfdp − ﬁlter for drawing large undirected graphs
+  */
+  //layout=dot /* dot | fdp gives best results */
+  nodesep=1 /* spreads things out a little bit more (default is 1, use 2 to double) */
+  ranksep=1
+  rotate=0 /* rotate by 0 or 90 degrees (but unfortuantly it rotates the node images too) */
+
+  /* node defaults */
+  node [
+    label=""
+    shape=none
+  ];
+
+  /* defineheraph */
+  n5g5170 [
+    image="polycubes/5/g5170.svg"
+  ];
+
+  n5g5192 [
+    image="polycubes/5/g5192.svg"
+  ];
+
+  n5g5236 [
+    image="polycubes/5/g5236.svg"
+  ];
+
+  n5g5258 [
+    image="polycubes/5/g5258.svg"
+  ];
+
+  n5g5280 [
+    image="polycubes/5/g5280.svg"
+  ];
+
+  n5g5302 [
+    image="polycubes/5/g5302.svg"
+  ];
+
+  n5g5324 [
+    image="polycubes/5/g5324.svg"
+  ];
+
+  n5g5346 [
+    image="polycubes/5/g5346.svg"
+  ];
+
+  n5g5368 [
+    image="polycubes/5/g5368.svg"
+  ];
+
+  n5g5390 [
+    image="polycubes/5/g5390.svg"
+  ];
+
+  n5g5412 [
+    image="polycubes/5/g5412.svg"
+  ];
+
+  n5g5434 [
+    image="polycubes/5/g5434.svg"
+  ];
+
+  n5g5456 [
+    image="polycubes/5/g5456.svg"
+  ];
+
+  n5g5478 [
+    image="polycubes/5/g5478.svg"
+  ];
+
+  n5g5500 [
+    image="polycubes/5/g5500.svg"
+  ];
+
+  n5g7064 [
+    image="polycubes/5/g7064.svg"
+  ];
+
+  n5g7184 [
+    image="polycubes/5/g7184.svg"
+  ];
+
+  n5g7304 [
+    image="polycubes/5/g7304.svg"
+  ];
+
+  n5g7393 [
+    image="polycubes/5/g7393.svg"
+  ];
+
+  n5g7513 [
+    image="polycubes/5/g7513.svg"
+  ];
+
+  n5g7764 [
+    image="polycubes/5/g7764.svg"
+  ];
+
+  n5g7884 [
+    image="polycubes/5/g7884.svg"
+  ];
+
+  n5g7945 [
+    image="polycubes/5/g7945.svg"
+  ];
+
+
+  /* edges */
+  n5g5170 -- n5g5258;
+  n5g5170 -- n5g5192;
+  n5g5170 -- n5g5302;
+  n5g5170 -- n5g5324;
+  n5g5170 -- n5g5368;
+  n5g5170 -- n5g5390;
+  n5g5170 -- n5g5412;
+  n5g5170 -- n5g5434;
+  n5g5170 -- n5g5478;
+  n5g5170 -- n5g5500;
+  n5g5170 -- n5g7513;
+  n5g5170 -- n5g7764;
+  n5g5170 -- n5g7945;
+  
+  n5g5192 -- n5g5236;
+  n5g5192 -- n5g5258;
+  n5g5192 -- n5g5280;
+  n5g5192 -- n5g5302;
+  n5g5192 -- n5g5324;
+  n5g5192 -- n5g5368;
+  n5g5192 -- n5g5390;
+  n5g5192 -- n5g5456;
+  n5g5192 -- n5g5478;
+  n5g5192 -- n5g5500;
+  n5g5192 -- n5g7064;
+  n5g5192 -- n5g7184;
+  n5g5192 -- n5g7945;
+  
+  n5g5236 -- n5g7945;
+  
+  n5g5258 -- n5g5280;
+  n5g5258 -- n5g5302;
+  n5g5258 -- n5g5324;
+  n5g5258 -- n5g5346;
+  n5g5258 -- n5g5368;
+  n5g5258 -- n5g5390;
+  n5g5258 -- n5g5412;
+  n5g5258 -- n5g5434;
+  n5g5258 -- n5g5456;
+  n5g5258 -- n5g5478;
+  n5g5258 -- n5g5500;
+  n5g5258 -- n5g7064;
+  n5g5258 -- n5g7184;
+  n5g5258 -- n5g7304;
+  n5g5258 -- n5g7513;
+  n5g5258 -- n5g7764;
+  n5g5258 -- n5g7884;
+  n5g5258 -- n5g7945;
+  
+  n5g5280 -- n5g5302;
+  n5g5280 -- n5g5324;
+  n5g5280 -- n5g5368;
+  n5g5280 -- n5g5390;
+  n5g5280 -- n5g5434;
+  n5g5280 -- n5g5456;
+  n5g5280 -- n5g5500;
+  n5g5280 -- n5g7064;
+  n5g5280 -- n5g7184;
+  n5g5280 -- n5g7884;
+  n5g5280 -- n5g7945;
+  
+  n5g5302 -- n5g5324;
+  n5g5302 -- n5g5368;
+  n5g5302 -- n5g5390;
+  n5g5302 -- n5g5412;
+  n5g5302 -- n5g5434;
+  n5g5302 -- n5g5456;
+  n5g5302 -- n5g5478;
+  n5g5302 -- n5g5500;
+  n5g5302 -- n5g7064;
+  n5g5302 -- n5g7184;
+  n5g5302 -- n5g7513;
+  n5g5302 -- n5g7764;
+  n5g5302 -- n5g7884;
+  n5g5302 -- n5g7945;
+  
+  n5g5324 -- n5g5368;
+  n5g5324 -- n5g5390;
+  n5g5324 -- n5g5434;
+  n5g5324 -- n5g5478;
+  n5g5324 -- n5g5500;
+  n5g5324 -- n5g7513;
+  n5g5324 -- n5g7884;
+  n5g5324 -- n5g7945;
+  
+  n5g5346 -- n5g5368;
+  n5g5346 -- n5g5412;
+  n5g5346 -- n5g5456;
+  n5g5346 -- n5g7304;
+  n5g5346 -- n5g7393;
+  n5g5346 -- n5g7764;
+
+  n5g5368 -- n5g5390;
+  n5g5368 -- n5g5412;
+  n5g5368 -- n5g5434;
+  n5g5368 -- n5g5456;
+  n5g5368 -- n5g5478;
+  n5g5368 -- n5g5500;
+  n5g5368 -- n5g7884;
+  n5g5368 -- n5g7945;
+  
+  n5g5390 -- n5g5412;
+  n5g5390 -- n5g5434;
+  n5g5390 -- n5g5456;
+  n5g5390 -- n5g5478;
+  n5g5390 -- n5g5500;
+  n5g5390 -- n5g7064;
+  n5g5390 -- n5g7184;
+  n5g5390 -- n5g7304;
+  n5g5390 -- n5g7393;
+  n5g5390 -- n5g7764;
+  n5g5390 -- n5g7884;
+  n5g5390 -- n5g7945;
+
+  n5g5412 -- n5g5456;
+  n5g5412 -- n5g7064;
+  n5g5412 -- n5g7304;
+  n5g5412 -- n5g7393;
+  n5g5412 -- n5g7513;
+  n5g5412 -- n5g7764;
+
+  n5g5434 -- n5g5478;
+  n5g5434 -- n5g5500;
+  n5g5434 -- n5g7513;
+  n5g5434 -- n5g7884;
+  n5g5434 -- n5g7945;
+
+  n5g5456 -- n5g7064;
+  n5g5456 -- n5g7184;
+  
+  n5g5478 -- n5g5500;
+  n5g5478 -- n5g7884;
+  n5g5478 -- n5g7945;
+
+  n5g5500 -- n5g7064;
+  n5g5500 -- n5g7304;
+  n5g5500 -- n5g7393;
+  n5g5500 -- n5g7764;
+  n5g5500 -- n5g7884;
+  n5g5500 -- n5g7945;
+
+  n5g7064 -- n5g7184;
+  n5g7064 -- n5g7304;
+  n5g7064 -- n5g7393;
+  n5g7064 -- n5g7764;
+
+  //n5g7184
+  
+  n5g7304 -- n5g7393;
+
+  //n5g7393
+  
+  n5g7513 -- n5g7764;
+  
+  //n5g7764
+  
+  n5g7884 -- n5g7945;
+  
+  //n5g7945
+}

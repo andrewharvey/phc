@@ -1,0 +1,241 @@
+/*
+ * This graph file contains all 3D polycubes for 1 to 5 cubes. It shows which
+ * polycubes contain which other polycubes.
+ * 
+ * You can generate a svg using
+ *   dot -Tsvg -o polycubes-gen.svg polycubes-gen.dot
+ * then you can use rsvg to make a png. If you want to use -Tpng, you will need
+ * to change the image links in this file to point to the png node images.
+ *
+ * Written by Andrew Harvey <http://andrewharvey4.wordpress.com/>
+ *
+ * To the extent possible under law, the person who associated CC0
+ * with this work has waived all copyright and related or neighboring
+ * rights to this work.
+ * http://creativecommons.org/publicdomain/zero/1.0/
+ */
+
+strict digraph polycubesgen {
+  /* set the defaults */
+
+  /* graph defaults */
+  /* layout options
+    dot − ﬁlter for drawing directed graphs
+    neato − ﬁlter for drawing undirected graphs
+    twopi − ﬁlter for radial layouts of graphs
+    circo − ﬁlter for circular layout of graphs
+    fdp − ﬁlter for drawing undirected graphs
+    sfdp − ﬁlter for drawing large undirected graphs
+  */
+  layout=dot /* dot | fdp gives best results */
+  nodesep=1 /* spreads things out a little bit more (default is 1, use 2 to double) */
+  ranksep=1
+  rotate=0 /* rotate by 0 or 90 degrees (but unfortuantly it rotates the node images too) */
+  
+  /* node defaults */
+  node [
+    label=""
+    shape=none
+  ];
+  
+  /* define the graph */
+  /* nodes */
+  n11 [
+    image="polycubes/1/1.svg"
+  ];
+
+  n21 [
+    image="polycubes/2/1.svg"
+  ];
+
+  n3g4583 [
+    image="polycubes/3/g4583.svg"
+  ];
+
+  n3g4597 [
+    image="polycubes/3/g4597.svg"
+  ];
+
+  n4g4667 [
+    image="polycubes/4/g4667.svg"
+  ];
+
+  n4g4741 [
+    image="polycubes/4/g4741.svg"
+  ];
+
+  n4g4787 [
+    image="polycubes/4/g4787.svg"
+  ];
+
+  n4g4833 [
+    image="polycubes/4/g4833.svg"
+  ];
+
+  n4g4851 [
+    image="polycubes/4/g4851.svg"
+  ];
+
+  n4g4869 [
+    image="polycubes/4/g4869.svg"
+  ];
+
+  n4g4887 [
+    image="polycubes/4/g4887.svg"
+  ];
+
+  n5g5170 [
+    image="polycubes/5/g5170.svg"
+  ];
+
+  n5g5192 [
+    image="polycubes/5/g5192.svg"
+  ];
+
+  n5g5236 [
+    image="polycubes/5/g5236.svg"
+  ];
+
+  n5g5258 [
+    image="polycubes/5/g5258.svg"
+  ];
+
+  n5g5280 [
+    image="polycubes/5/g5280.svg"
+  ];
+
+  n5g5302 [
+    image="polycubes/5/g5302.svg"
+  ];
+
+  n5g5324 [
+    image="polycubes/5/g5324.svg"
+  ];
+
+  n5g5346 [
+    image="polycubes/5/g5346.svg"
+  ];
+
+  n5g5368 [
+    image="polycubes/5/g5368.svg"
+  ];
+
+  n5g5390 [
+    image="polycubes/5/g5390.svg"
+  ];
+
+  n5g5412 [
+    image="polycubes/5/g5412.svg"
+  ];
+
+  n5g5434 [
+    image="polycubes/5/g5434.svg"
+  ];
+
+  n5g5456 [
+    image="polycubes/5/g5456.svg"
+  ];
+
+  n5g5478 [
+    image="polycubes/5/g5478.svg"
+  ];
+
+  n5g5500 [
+    image="polycubes/5/g5500.svg"
+  ];
+
+  n5g7064 [
+    image="polycubes/5/g7064.svg"
+  ];
+
+  n5g7184 [
+    image="polycubes/5/g7184.svg"
+  ];
+
+  n5g7304 [
+    image="polycubes/5/g7304.svg"
+  ];
+
+  n5g7393 [
+    image="polycubes/5/g7393.svg"
+  ];
+
+  n5g7513 [
+    image="polycubes/5/g7513.svg"
+  ];
+
+  n5g7764 [
+    image="polycubes/5/g7764.svg"
+  ];
+
+  n5g7884 [
+    image="polycubes/5/g7884.svg"
+  ];
+
+  n5g7945 [
+    image="polycubes/5/g7945.svg"
+  ];
+
+
+  /* edges */
+  n11 -> n21;
+  
+  n21 -> n3g4583;
+  n21 -> n3g4597;
+  
+  n3g4583 -> n4g4667;
+  n3g4583 -> n4g4833;
+  n3g4583 -> n4g4887;
+  
+  n3g4597 -> n4g4667;
+  n3g4597 -> n4g4741;
+  n3g4597 -> n4g4787;
+  n3g4597 -> n4g4833;
+  n3g4597 -> n4g4851;
+  n3g4597 -> n4g4869;
+  
+  n4g4667 -> n5g5192;
+  n4g4667 -> n5g5258;
+  n4g4667 -> n5g5280;
+  n4g4667 -> n5g5302;
+  n4g4667 -> n5g5390;
+  n4g4667 -> n5g5456;
+  n4g4667 -> n5g7064;
+  n4g4667 -> n5g7184;
+  n4g4741 -> n5g5170;
+  n4g4741 -> n5g5258;
+  n4g4741 -> n5g5302;
+  n4g4741 -> n5g5412;
+  n4g4741 -> n5g7513;
+  n4g4741 -> n5g7764;
+  n4g4787 -> n5g5258;
+  n4g4787 -> n5g5346;
+  n4g4833 -> n5g5170;
+  n4g4833 -> n5g5258;
+  n4g4833 -> n5g5280;
+  n4g4833 -> n5g5302;
+  n4g4833 -> n5g5324;
+  n4g4833 -> n5g5368;
+  n4g4833 -> n5g5390;
+  n4g4833 -> n5g5434;
+  n4g4833 -> n5g5478;
+  n4g4833 -> n5g5500;
+  n4g4833 -> n5g7884;
+  n4g4833 -> n5g7945;
+  n4g4851 -> n5g5346;
+  n4g4851 -> n5g5390;
+  n4g4851 -> n5g5412;
+  n4g4851 -> n5g5500;
+  n4g4851 -> n5g7064;
+  n4g4851 -> n5g7304;
+  n4g4851 -> n5g7393;
+  n4g4851 -> n5g7764;
+  n4g4869 -> n5g5346;
+  n4g4869 -> n5g5368;
+  n4g4869 -> n5g5412;
+  n4g4869 -> n5g5456;
+  n4g4887 -> n5g5192;
+  n4g4887 -> n5g5236;
+  n4g4887 -> n5g7945;
+  
+}
